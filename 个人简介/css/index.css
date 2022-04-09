@@ -1,0 +1,308 @@
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background: url(../images/bg2.jfif) no-repeat center/cover;
+    font: 16px/1.5 arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+.main {
+    width: 960px;
+    padding: 20px;
+    margin: 60px auto 20px;
+    background-color: rgba(242, 223, 223, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+}
+
+.main .nav {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.main .nav li {
+    float: left;
+    width: 120px;
+    margin: 0 35px;
+    border: 1px solid #c58b8b;
+    border-radius: 6px;
+}
+
+.main .nav li a {
+    color: #000;
+    transition: all .5s;
+}
+
+.main .nav li:hover a {
+    background-color: pink;
+    color: #fff;
+}
+
+.main .banner {
+    height: 400px;
+}
+
+.main .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ciwen */
+
+.main .content {
+    padding: 20px 0;
+}
+
+.main .content h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.main .content h1 span {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #158bb8;
+}
+
+.main .content img {
+    width: 280px;
+    height: 206px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #158bb8;
+    border-radius: 6px;
+}
+
+.main .content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 50px;
+    text-indent: 2em;
+}
+
+.main .content div h2 {
+    height: 36px;
+    margin-bottom: 30px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main .content div h2::before {
+    content: "";
+    float: left;
+    position: relative;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: #158bb8;
+    border-radius: 6px;
+}
+
+.main .content div h2::after {
+    content: "";
+    float: left;
+    position: relative;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: #158bb8;
+    border-radius: 6px;
+}
+
+.main .content div h2 span {
+    float: left;
+    width: 20%; 
+}
+
+.main .content div .w4 {
+    width: 400px;
+    height: 300px;
+}
+
+/* 页脚 */
+.main .foot p {
+    text-align: center;
+    padding: 5px 0;
+    cursor: context-menu;
+}
+
+.main .foot a {
+    display: inline;
+    color: #000;
+}
+
+/* meishi */
+.main .content li {
+    float: left;
+    width: 298px;
+    margin: 0 10px 10px;
+    border: 1px solid #158bb8;
+    background-color: #fdfdfd;
+    border-radius: 6px;
+}
+
+.main .content li img {
+    width: 100%;
+    height: 298px;
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.main .content li p {
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+    line-height: 26px;
+}
+
+/* guanyu */
+.main .content .big-img {
+    width: 948px;
+    height: 960px;
+    margin: 10px auto 30px;
+    padding: 5px;
+    border: 1px solid #158BB8;
+}
+
+/* liuyan */
+.main .content form div {
+    width: 400px;
+    margin: auto;
+}
+
+.main .content form div p::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main .content form div span {
+    float: left;
+    width: 20%;
+    height: 30px;
+    cursor: context-menu;
+    text-indent: 0;
+    line-height: 30px;
+    text-align: right;
+}
+
+.main .content form div input,
+.main .content form div select,
+.main .content form div textarea{
+    float: left;
+    width: 80%;
+    height: 30px;
+    padding: 0;
+    border: none;
+    text-indent: 10px;
+    outline: 1px solid #158bb8;
+    border-radius: 6px;
+}
+
+.main .content form div select {
+    width: 30%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main .content form div textarea {
+    max-width: 80%;
+    height: 130px;
+    padding: 10px 0;
+}
+
+.main .content form div button {
+    display: block;
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all .5s;
+}
+
+.main .content form div button:hover {
+    background-color: #158bb8;
+    color: #fff;
+} /*这里是弹窗*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    position: absolute;
+     top: 85%;
+     left: 50%;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(216, 154, 192);
+    cursor: pointer;
+    user-select: none;
+    color: #000;
+    border-radius: 8px;
+    transform: translate(-50%,-50%);
+}
+
+.open {
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    width: 600px;
+    text-indent: 2em;
+    text-align: center;
+    line-height: 42px;
+    background: url(../images/22.jpg) center/cover;
+    border-radius: 0 0 6px 6px;
+    transform: translateX(-50%);
+    animation-duration: 2s;
+    /* animation-name: open; */
+    animation-fill-mode: forwards;
+}
+
+.open .over {
+    overflow: hidden;
+}
+
+.open .font {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-right: -10px;
+}
+
+@keyframes open {
+    0% {
+        top: -400px;
+    }
+    100% {
+        top: 60px;
+    }
+}
+
+.f {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    padding: 2px 10px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 0em;
+    user-select: none;
+    border-radius: 50%;
+}

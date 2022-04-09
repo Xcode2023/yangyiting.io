@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <script type="text/javascript">
+var button = document.getElementsByTagName('button')[0],
+    open = document.getElementsByClassName('open')[0],
+    f = document.getElementsByClassName('f')[0];
+
+    button.addEventListener('click',function() {
+        open.style.animationName = 'open';
+    })
+
+    f.addEventListener('click', function () {
+        open.style.animationName = '';
+    })
+
+   </script>
+    <div class="main">
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="ciwen.html">词文分享</a></li>
+                <li><a href="meishi.html">美食分享</a></li>
+                <li><a href="guanyu.html">关于我</a></li>
+                <li><a href="liuyan.html">在线留言</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="images/7.jfif" alt="">
+        </div>
+        <div class="content">
+            <h1><span>对我留言or祝我生日快乐？</span></h1>
+            <form action="">
+                <div>
+                    <p>
+                        <span>姓名：</span>
+                        <input type="text" id="" value="">
+                    </p>
+                    <p>
+                        <span>联系方式：</span>
+                        <input type="text" id="" value="">
+                    </p>
+                    <p>
+                        <span>留言类型：</span>
+                        <select name="">
+                            <option value="">关于我</option>
+                            <option value="">关于本站</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>留言处：</span>
+                        <textarea ></textarea>
+                    </p>
+
+                    <p>
+                        <button  style="position: absolute;color: rgb(rgb(221, 175, 219), rgb(222, 236, 14), rgb(245, 206, 229));
+                        top: 129%;
+                        left: 50%;
+                       width: 130px;
+                       height: 30px; ">提交</button>
+                        <div class="open">
+                            <div class="over">
+                                <div class="font">
+                                    <h2>hello world !!</h2>
+                                我与江西科技师范大学势不两立   
+                                </div>
+                            </div>       
+                            <div class="f">关闭</div>
+                        </div>
+                    
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="foot">
+            <p>个人网页</p>
+            <p><a href="javascript:scroll(0,0)">返回顶部</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
